@@ -32,7 +32,7 @@ module ERBLint
       load_config
 
       if !@files.empty? && lint_files.empty?
-        failure!("no files found...\n")
+        success!("no files found...\n")
       elsif lint_files.empty?
         failure!("no files found or given, specify files or config...\n#{option_parser}")
       end
